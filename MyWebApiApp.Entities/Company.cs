@@ -13,7 +13,10 @@ namespace MyWebApiApp.Entities
         public string CatchPhrase { get; set; }
         public string Bs { get; set; }
 
-        public int UserId { get; set; }
-        public User User { get; set; }
+        public List<User> Users { get; set; }
+
+
+        //public int UserId { get; set; }
+        //public User User { get; set; }
     }
 }

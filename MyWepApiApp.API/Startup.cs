@@ -10,6 +10,7 @@ using MyWebApi.DataAccess.Abstract;
 using MyWebApi.DataAccess.Concrete;
 using MyWebApiApp.Business.Abstract;
 using MyWebApiApp.Business.Concrete;
+using MyWebApiApp.DataAccess.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -55,7 +56,8 @@ namespace MyWepApiApp.API
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyWepApiApp.API v1"));
-                SeedDatabase.Seed();
+                //SeedDatabase.Seed();
+                DbInitializer.Initialize();
             }
 
             app.UseRouting();

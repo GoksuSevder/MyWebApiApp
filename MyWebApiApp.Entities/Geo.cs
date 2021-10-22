@@ -12,7 +12,10 @@ namespace MyWebApiApp.Entities
         public double Lat { get; set; }
         public double Lng { get; set; }
 
-        public int Addressid { get; set; }
-        public Address Address { get; set; }
+        public List<Address> Addresses { get; set; }
+
+
+
+
     }
 }
