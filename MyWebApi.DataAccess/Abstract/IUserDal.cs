@@ -9,5 +9,6 @@ namespace MyWebApi.DataAccess.Abstract
 {
     public interface IUserDal : IGenericRepository<User>
     {
+        IEnumerable<User> GetAllUserInfo();
     }
 }

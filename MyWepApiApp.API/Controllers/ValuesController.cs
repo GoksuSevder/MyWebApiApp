@@ -21,7 +21,7 @@ namespace MyWepApiApp.API.Controllers
         [HttpGet]
         public List<User> Get()
         {
-            return _userService.GetAll();
+            return _userService.GetAllUserInfo();
 
         }
         [HttpGet("{id}")]

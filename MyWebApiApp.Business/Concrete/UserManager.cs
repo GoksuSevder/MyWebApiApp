@@ -40,5 +40,10 @@ namespace MyWebApiApp.Business.Concrete
         {
           return  _userDal.Update(entity);
         }
+
+        public List<User> GetAllUserInfo()
+        {
+            return _userDal.GetAllUserInfo().ToList();
+        }
     }
 }

@@ -11,6 +11,7 @@ namespace MyWebApiApp.Business.Abstract
     {
         User GetById(int id);
         List<User> GetAll();
+        List<User> GetAllUserInfo();
         User Create(User entity); 
         User Update(User entity);
         void Delete(User entity);
